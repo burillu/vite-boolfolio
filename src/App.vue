@@ -3,15 +3,17 @@
 <template>
   <AppHeader />
   <main>
-    <div class="container">
-      <span>{{ store.message }}</span>
 
-      <ul>
-        <li v-for="project in this.projects"> {{ project.title }}</li>
-      </ul>
-    </div>
+    <AppMain />
+
+
+
+
 
   </main>
+  <footer>
+    <AppFooter />
+  </footer>
 </template>
 
 <script>
@@ -19,6 +21,8 @@ import axios from 'axios';
 import { store } from './store.js';
 
 import AppHeader from './components/header/AppHeader.vue';
+import AppFooter from './components/footer/AppFooter.vue';
+import AppMain from './components/main/AppMain.vue';
 
 export default {
   name: "App",
@@ -32,15 +36,16 @@ export default {
     getAllProjects() {
       axios.get(store.apiUrl + "/projects").then(res => {
         console.log(res.data.results);
-        this.projects = res.data.results.data;
-        console.log(this.projects);
+        this.store.projects = res.data.results.data;
+
       });
     }
   },
   mounted() {
     this.getAllProjects();
+    console.log($store.projects);
   },
-  components: { AppHeader }
+  components: { AppHeader, AppFooter, AppMain }
 }
 
 </script>

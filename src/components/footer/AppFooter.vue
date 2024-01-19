@@ -1,15 +1,14 @@
 <template>
-    <header>
+    <div class="container">
+        Footer
         <AppNavBar />
-    </header>
+    </div>
 </template>
 <script>
-import AppNavBar from './AppNavBar.vue'
-
-
+import AppNavBar from '../header/AppNavBar.vue';
 
 export default {
-    name: 'AppHeader',
+    name: 'AppFooter',
     components: { AppNavBar }
 }
 </script>
