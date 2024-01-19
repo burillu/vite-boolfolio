@@ -17,7 +17,7 @@
 </template>
 
 <script>
-import axios from 'axios';
+
 import { store } from './store.js';
 
 import AppHeader from './components/header/AppHeader.vue';
@@ -32,19 +32,7 @@ export default {
       store
     };
   },
-  methods: {
-    getAllProjects() {
-      axios.get(store.apiUrl + "/projects").then(res => {
-        console.log(res.data.results);
-        this.store.projects = res.data.results.data;
 
-      });
-    }
-  },
-  mounted() {
-    this.getAllProjects();
-    console.log($store.projects);
-  },
   components: { AppHeader, AppFooter, AppMain }
 }
 
