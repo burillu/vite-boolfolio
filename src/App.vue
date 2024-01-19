@@ -1,6 +1,7 @@
 
 
 <template>
+  <AppHeader />
   <main>
     <div class="container">
       <span>{{ store.message }}</span>
@@ -17,13 +18,15 @@
 import axios from 'axios';
 import { store } from './store.js';
 
+import AppHeader from './components/header/AppHeader.vue';
+
 export default {
   name: "App",
   projects: [],
   data() {
     return {
       store
-    }
+    };
   },
   methods: {
     getAllProjects() {
@@ -31,13 +34,13 @@ export default {
         console.log(res.data.results);
         this.projects = res.data.results.data;
         console.log(this.projects);
-
-      })
+      });
     }
   },
   mounted() {
-    this.getAllProjects()
-  }
+    this.getAllProjects();
+  },
+  components: { AppHeader }
 }
 
 </script>
