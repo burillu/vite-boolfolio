@@ -26,4 +26,45 @@ h1 {
 a {
   text-decoration: none;
   color: inherit;
+  cursor: pointer;
+}
+
+.navbar-nav .nav-link.active {
+  color: $color-my-contrast;
+}
+
+.my-badge-html {
+  background-color: $my-blue-badge;
+}
+
+.my-badge-css {
+  background-color: $yellow-300;
+}
+
+.my-badge-bootstrap {
+  background-color: $indigo-500;
+}
+
+.my-badge-sass {
+  background-color: $pink-300;
+}
+
+.my-badge-vuejs {
+  background-color: $teal-600;
+}
+
+.my-badge-javascript {
+  background-color: $yellow-400;
+}
+
+.my-badge-php8 {
+  background-color: $blue-300;
+}
+
+.my-badge-sql {
+  background-color: $orange-500;
+}
+
+.my-badge-laravel {
+  background-color: $red;
 }
