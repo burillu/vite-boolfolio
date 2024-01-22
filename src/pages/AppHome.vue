@@ -1,8 +1,5 @@
 <template>
-    <AppHero :pageTitle="Home" />
-    <div class="container">
-        <h1 class="text-center">Home - Michele Ebau</h1>
-    </div>
+    <AppHero :pageTitle="'Home'" />
 </template>
 <script>
 import AppHero from '@/components/main/AppHero.vue';

@@ -30,7 +30,7 @@ a {
 }
 
 header {
-  box-shadow: 1px 6px 15px 6px $my-blue-badge;
+  box-shadow: 1px 6px 15px 6px $my-dark-blue;
   width: 100%;
   height: 56px;
   position: fixed;
@@ -38,6 +38,10 @@ header {
   left: 0;
   background-color: $color-my-quaternary;
   z-index: 100;
+}
+
+main {
+  margin-top: 57px;
 }
 
 .my-secondary {
@@ -50,7 +54,7 @@ header {
 
 .hero {
   height: 45vh;
-  margin-top: 56px;
+
 }
 
 // backgrounds

@@ -5,6 +5,7 @@
                 <div class="col-8">
                     <AppCard :project="project" />
                 </div>
+
             </div>
 
         </div>
