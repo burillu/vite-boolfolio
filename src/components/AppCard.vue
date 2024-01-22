@@ -11,9 +11,9 @@
                 <pre class="mb-3">{{ project.body }}</pre>
             </div>
 
-            <a v-for="technology in project.technologies" :to="{ name: 'projects' }">
+            <router-link v-for="technology in project.technologies" :to="{ name: 'projects' }">
                 <span class="badge rounded-pill" :class="'my-badge-' + technology.slug">{{ technology.name }}</span>
-            </a>
+            </router-link>
 
 
         </div>
