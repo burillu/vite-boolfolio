@@ -1,4 +1,5 @@
 <template>
+    <AppHero :pageTitle="'Projects'" />
     <div class="container">
         <!-- <ul>
             
@@ -18,6 +19,7 @@
 import AppCard from '@/components/AppCard.vue';
 import { store } from '../store';
 import axios from 'axios';
+import AppHero from '@/components/main/AppHero.vue';
 export default {
     name: 'AppProjects',
     data() {
@@ -55,7 +57,7 @@ export default {
         this.getAllProjects();
         //console.log(store.projects);
     },
-    components: { AppCard }
+    components: { AppCard, AppHero }
 }
 </script>
 <style></style>
