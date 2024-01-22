@@ -8,7 +8,7 @@
                 <div class=" " id="navbarNavDropdown">
                     <ul class="navbar-nav fw-bold ">
                         <li class="nav-item" v-for="item in tabsArray">
-                            <router-link class="nav-link" :class="classTextColor" aria-current="page"
+                            <router-link class="nav-link" active-class="active" :class="classTextColor" aria-current="page"
                                 :to="{ name: item.href }">{{
                                     item.title }}</router-link>
                             <!-- <a class="nav-link" :class="classTextColor" aria-current="page" :href="item.href">{{ item.title
