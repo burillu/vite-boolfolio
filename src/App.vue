@@ -1,7 +1,10 @@
 
 
 <template>
-  <AppHeader />
+  <header>
+    <AppHeader />
+  </header>
+
   <main>
 
     <router-view></router-view>

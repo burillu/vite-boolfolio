@@ -17,32 +17,32 @@ export const store = reactive({
                 title: 'Projects',
                 href: 'projects',
             },
-            {
-                title: 'Portfolio',
-                href: 'home',
-            },
-            {
-                title: 'Our Process',
-                href: 'home',
-            },
-            {
-                title: 'Pricing',
-                href: 'home',
-            },
-            {
-                title: 'Blog',
-                href: 'home',
-            },
-            {
-                title: 'Contact',
-                href: 'home',
-            },
+            // {
+            //     title: 'Portfolio',
+            //     href: 'home',
+            // },
+            // {
+            //     title: 'Our Process',
+            //     href: 'home',
+            // },
+            // {
+            //     title: 'Pricing',
+            //     href: 'home',
+            // },
+            // {
+            //     title: 'Blog',
+            //     href: 'home',
+            // },
+            // {
+            //     title: 'Contact',
+            //     href: 'home',
+            // },
 
         ],
-        btn: {
-            title: 'Get a Quote',
-            classBg: 'my-btn-light'
-        }
+        // btn: {
+        //     title: 'Get a Quote',
+        //     classBg: 'my-btn-light'
+        // }
     },
     navBarFooter: {
         classText: 'my-text-primary',
@@ -50,26 +50,26 @@ export const store = reactive({
         tabs: [
 
             {
-                title: 'About Us',
+                title: 'Home',
                 href: 'home',
             },
             {
-                title: 'Portfolio',
-                href: 'home',
+                title: 'Projects',
+                href: 'projects',
             },
 
-            {
-                title: 'Pricing',
-                href: 'home',
-            },
-            {
-                title: 'Career',
-                href: 'home',
-            },
-            {
-                title: 'Contact',
-                href: 'home',
-            },
+            // {
+            //     title: 'Pricing',
+            //     href: 'home',
+            // },
+            // {
+            //     title: 'Career',
+            //     href: 'home',
+            // },
+            // {
+            //     title: 'Contact',
+            //     href: 'home',
+            // },
 
         ],
 
