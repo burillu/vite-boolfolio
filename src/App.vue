@@ -4,7 +4,8 @@
   <AppHeader />
   <main>
 
-    <AppMain />
+    <router-view></router-view>
+
 
 
 
@@ -22,7 +23,7 @@ import { store } from './store.js';
 
 import AppHeader from './components/header/AppHeader.vue';
 import AppFooter from './components/footer/AppFooter.vue';
-import AppMain from './components/main/AppMain.vue';
+//import AppMain from './pages/main/AppMain.vue';
 
 export default {
   name: "App",
@@ -33,11 +34,10 @@ export default {
     };
   },
 
-  components: { AppHeader, AppFooter, AppMain }
+  components: { AppHeader, AppFooter }
 }
 
 </script>
 
 <style scoped></style>
 
-ba

@@ -3,6 +3,7 @@ import { reactive } from "vue";
 export const store = reactive({
     message: 'tu sorella',
     apiUrl: 'http://127.0.0.1:8000/api',
+    imgUrl: 'http://127.0.0.1:8000/storage/',
     projects: [],
     navBarHeader: {
         classText: 'my-text-secondary',
@@ -10,31 +11,31 @@ export const store = reactive({
         tabs: [
             {
                 title: 'Home',
-                href: '#',
+                href: 'home',
             },
             {
-                title: 'About Us',
-                href: '#',
+                title: 'Projects',
+                href: 'projects',
             },
             {
                 title: 'Portfolio',
-                href: '#',
+                href: 'home',
             },
             {
                 title: 'Our Process',
-                href: '#',
+                href: 'home',
             },
             {
                 title: 'Pricing',
-                href: '#',
+                href: 'home',
             },
             {
                 title: 'Blog',
-                href: '#',
+                href: 'home',
             },
             {
                 title: 'Contact',
-                href: '#',
+                href: 'home',
             },
 
         ],
@@ -50,24 +51,24 @@ export const store = reactive({
 
             {
                 title: 'About Us',
-                href: '#',
+                href: 'home',
             },
             {
                 title: 'Portfolio',
-                href: '#',
+                href: 'home',
             },
 
             {
                 title: 'Pricing',
-                href: '#',
+                href: 'home',
             },
             {
                 title: 'Career',
-                href: '#',
+                href: 'home',
             },
             {
                 title: 'Contact',
-                href: '#',
+                href: 'home',
             },
 
         ],
