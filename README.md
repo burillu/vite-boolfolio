@@ -278,26 +278,27 @@ public function tags(){
 
 ```
 
-# laravel-api
+# vite-boolfolio
 
 ### Descrizione
-
 Continuiamo a lavorare sul codice dei giorni scorsi, ma in una nuova repo.
 L’esercizio di oggi è suddiviso in milestone ed è importante che ne seguiate l’ordine.
-#### Milestone 1
-Aggiungiamo al nostro progetto Laravel una nuovo Api/ProjectController. Questo controller risponderà a delle richieste via API e si occuperà di restituire la lista dei progetti presenti nel database in formato json.
-#### Milestone 2
-Testiamo la chiamata API tramite browser e assicuriamoci di ricevere i dati correttamente.
-#### Milestone 3
-Progettiamo il nostro front-office (aiutandoci con figma) per farci un'idea di quali end-point API avremo bisogno
-### Bonus
-- Se volete preparate una nuova repo (nome repo: vite-boolfolio)
-e iniziamo ad occuparci della parte front-office della nostra applicazione facendo qualche test: 
-    - creiamo un nuovo progetto Vue 3 con Vite e installiamo axios.
-
-- Colleghiamo questo progetto alla repo separata creata.
-- Nel componente principale della nostra Vue App facciamo una chiamata API all’endpoint costruito nel progetto Laravel (milestone 1) e recuperiamo tutti i progetti dal nostro back-end.
-- Stampiamo in console i risultati e verifichiamo di ricevere i dati correttamente.
+### Milestone 1
+1. Iniziamo ad occuparci della parte front-office della nostra applicazione: creiamo un nuovo progetto Vue 3 con Vite e installiamo axios.
+2. Installiamo vue router e creiamo il file router.js con le rotte (almeno  home, projects, singolo progetto e fallback route)
+### Milestone 2
+1. Nel componente relativo alla lista dei progetti della nostra Vue App facciamo una chiamata API all’endpoint costruito nel progetto Laravel  e recuperiamo tutti i progetti dal nostro back-end.
+2. Stampiamo in console i risultati e verifichiamo di ricevere i dati correttamente. Poi stampiamoli in pagina
+### Milestone 3
+1. Creiamo un nuovo componente ProjectCard, che corrisponde ad una card per visualizzare un progetto. 
+2. Utilizziamo questo componente per visualizzare tutti i progetti ricevuti tramite API.
+### Milestone 4
+1. Creiamo un nuovo componente es. ProjectDetail che corrisponde alla rotta per visualizzare il singolo progetto completo di technologies e Type. 
+2. Utilizziamo questo componente per visualizzare i dati ricevuti tramite API che recupera il singolo progetto.
+3. Creiamo anche un componente NotFound per la rotta di fallback.
+### Bonus:
+1. Gestire la paginazione dei risultati nella pagina dei progetti
+2. Creare una barra di navigazione in un componente header e un componente per il footer
 
 > ## *Spolverata di vue+vite:*
 > 1. Crea repo su git (senza opzioni se non pubblico)
