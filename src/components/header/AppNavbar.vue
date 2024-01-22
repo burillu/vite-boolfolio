@@ -8,8 +8,11 @@
                 <div class=" " id="navbarNavDropdown">
                     <ul class="navbar-nav fw-bold ">
                         <li class="nav-item" v-for="item in tabsArray">
-                            <a class="nav-link" :class="classTextColor" aria-current="page" :href="item.href">{{ item.title
-                            }}</a>
+                            <router-link class="nav-link" :class="classTextColor" aria-current="page"
+                                :to="{ name: item.href }">{{
+                                    item.title }}</router-link>
+                            <!-- <a class="nav-link" :class="classTextColor" aria-current="page" :href="item.href">{{ item.title
+                            }}</a> -->
                         </li>
                         <li v-if="btn" class="nav-item">
                             <button class="my-btn my-btn-light" :class="btn.classBg">

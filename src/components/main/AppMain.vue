@@ -47,7 +47,7 @@ export default {
         }
     },
     mounted() {
-        this.getAllProjects();
+        //this.getAllProjects();
         //console.log(store.projects);
     },
 }
