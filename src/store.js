@@ -17,10 +17,10 @@ export const store = reactive({
                 title: 'Projects',
                 href: 'projects',
             },
-            // {
-            //     title: 'Portfolio',
-            //     href: 'home',
-            // },
+            {
+                title: 'Contacts',
+                href: 'contacts',
+            },
             // {
             //     title: 'Our Process',
             //     href: 'home',
@@ -58,10 +58,10 @@ export const store = reactive({
                 href: 'projects',
             },
 
-            // {
-            //     title: 'Pricing',
-            //     href: 'home',
-            // },
+            {
+                title: 'Contacts',
+                href: 'contacts',
+            },
             // {
             //     title: 'Career',
             //     href: 'home',

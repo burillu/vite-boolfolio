@@ -2,6 +2,7 @@ import { createRouter, createWebHistory } from "vue-router";
 
 import AppProjects from './pages/AppProjects.vue';
 import AppHome from './pages/AppHome.vue';
+import AppContact from './pages/AppContact.vue';
 import NotFound from './pages/NotFound.vue';
 import ProjectDetail from './pages/ProjectDetail.vue';
 
@@ -22,6 +23,11 @@ const router = createRouter({
             path: '/projects/:slug',
             name: 'projects-details',
             component: ProjectDetail
+        },
+        {
+            path: '/contacts',
+            name: 'contacts',
+            component: AppContact
         },
         {
             path: "/:pathMatch(.*)*",
