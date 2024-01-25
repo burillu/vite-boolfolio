@@ -75,16 +75,18 @@ main {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: 20%;
-
-
-
-
-
 }
 
 .hero-content {
   background-color: $color-my-terciary;
   opacity: 90%;
+}
+
+#projects {
+  img {
+    height: 200px;
+    object-fit: contain;
+  }
 }
 
 // backgrounds

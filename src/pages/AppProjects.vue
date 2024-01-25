@@ -1,6 +1,6 @@
 <template>
     <AppHero :pageTitle="'Projects'" />
-    <div class="container">
+    <div class="container" id="projects">
         <div class="row mb-4 mt-4">
             <div class="col-2">
                 <label class="select-label" for="type">
