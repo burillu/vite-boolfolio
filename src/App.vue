@@ -6,14 +6,7 @@
   </header>
 
   <main>
-
     <router-view :key="$route.path"></router-view>
-
-
-
-
-
-
   </main>
   <footer>
     <AppFooter />

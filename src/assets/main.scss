@@ -40,12 +40,29 @@ header {
   z-index: 100;
 }
 
+footer {
+  height: 20vh;
+  background-color: $my-dark-blue;
+
+  .nav-link {
+    color: $color-my-terciary;
+  }
+}
+
 main {
   margin-top: 57px;
 }
 
 .my-secondary {
   color: $color-my-secondary;
+}
+
+.my-logo {
+  width: 55px;
+
+  img {
+    border-radius: 50%;
+  }
 }
 
 .navbar-nav .nav-link.active {
