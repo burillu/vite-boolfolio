@@ -6,7 +6,7 @@
                 <label class="select-label" for="type">
                     Select Project Type:
                 </label>
-                <select id="type" class="form-select" @change="getAllProjects()" v-model="selectedType" name="type">
+                <select id="type" class="form-select" @change="getType()" v-model="selectedType" name="type">
                     <option selected value="">All</option>
                     <option v-for="item in typesList" :value="item.id">
                         {{ item.name }}
@@ -16,7 +16,9 @@
         </div>
 
 
-
+        <h2 class="text-center">
+            {{ selectTypeValue }} Projects
+        </h2>
         <div class="row mb-4">
             <div class="col-3" v-for="project in store.projects.data">
 
@@ -56,7 +58,8 @@ export default {
             srcNext: null,
             srcPrev: null,
             typesList: null,
-            selectedType: null
+            selectedType: null,
+            selectTypeValue: 'All'
 
         };
     },
@@ -126,6 +129,30 @@ export default {
 
             });
         },
+        getType() {
+
+            this.getAllProjects();
+            if (!this.selectedType) {
+                this.selectTypeValue = 'All';
+                return
+            }
+
+            let typeValue = [];
+            this.typesList.forEach(el => {
+                if (el.id === this.selectedType) {
+                    typeValue.push(el);
+                }
+            });
+            if (typeValue[0].name) {
+                this.selectTypeValue = typeValue[0].name;
+
+            } else {
+
+                this.selectTypeValue = 'All';
+            }
+
+
+        },
         getTypesList() {
             axios.get(store.apiUrl + '/types').then(res => {
                 //console.log(res.data.results);
@@ -133,6 +160,7 @@ export default {
             });
             //return types
         },
+
         filterByType() {
             //axios.get(store.apiUrl+)
             //console.log(store.projects);

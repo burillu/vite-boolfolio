@@ -2,10 +2,10 @@
     <div class="card">
         <div class="card-body">
             <img :src="store.imgUrl + project.image" :alt="project.title">
-            <h3>Title: {{ project.title }}</h3>
+
 
             <div v-if="shortText">
-
+                <h4>Title: {{ project.title.substr(0, 15) + '...' }}</h4>
                 <pre class="mb-3">{{ project.body.substr(0, 10) + '...' }}</pre>
                 <router-link class="btn btn-primary" :to="{ name: 'projects-details', params: { slug: project.slug } }">
                     See Details
@@ -13,6 +13,7 @@
 
             </div>
             <div v-else>
+                <h3>Title: {{ project.title }}</h3>
                 <div class="mb-3">
                     <h5>Type: {{ project.type.name }}</h5>
                 </div>
