@@ -8,7 +8,7 @@
   <main>
     <router-view :key="$route.path"></router-view>
   </main>
-  <footer>
+  <footer class="mt-4">
     <AppFooter />
   </footer>
 </template>
