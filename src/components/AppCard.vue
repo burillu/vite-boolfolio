@@ -7,6 +7,9 @@
             <div v-if="shortText">
 
                 <pre class="mb-3">{{ project.body.substr(0, 10) + '...' }}</pre>
+                <router-link class="btn btn-primary" :to="{ name: 'projects-details', params: { slug: project.slug } }">
+                    See Details
+                </router-link>
 
             </div>
             <div v-else>
@@ -14,11 +17,12 @@
                     <h5>Type: {{ project.type.name }}</h5>
                 </div>
                 <pre class="mb-3">{{ project.body }}</pre>
+
             </div>
 
-            <router-link v-for="technology in project.technologies" :to="{ name: 'projects' }">
+            <!-- <router-link v-for="technology in project.technologies" :to="{ name: 'projects' }">
                 <span class="badge rounded-pill" :class="'my-badge-' + technology.slug">{{ technology.name }}</span>
-            </router-link>
+            </router-link> -->
 
 
 
