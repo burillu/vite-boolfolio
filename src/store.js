@@ -46,7 +46,7 @@ export const store = reactive({
     },
     navBarFooter: {
         classText: 'my-text-primary',
-        srcLogo: 'https://png.pngtree.com/png-clipart/20200709/original/pngtree-initial-letter-me-logo-template-png-image_3580872.jpg',
+        srcLogo: './images/footer-logo.png',
         tabs: [
 
             {

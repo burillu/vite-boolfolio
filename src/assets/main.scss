@@ -71,7 +71,20 @@ main {
 
 .hero {
   height: 45vh;
+  background-image: url('https://as2.ftcdn.net/v2/jpg/05/87/70/63/1000_F_587706354_EkvX6LkLdcUg1G9E8AC0xAzkHhc8X5Dx.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 20%;
 
+
+
+
+
+}
+
+.hero-content {
+  background-color: $color-my-terciary;
+  opacity: 90%;
 }
 
 // backgrounds
