@@ -1,6 +1,6 @@
 <template>
     <section id="home-content">
-        <div class="container p-5">
+        <div class="container">
 
             <div class="row justify-content-between">
                 <div class="col-12 col-md-6 d-flex flex-column justify-content-center">

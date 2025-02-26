@@ -9,10 +9,10 @@ $fa-font-path: './webfonts';
 @import '@fortawesome/fontawesome-free/scss/brands.scss';
 @import '@fortawesome/fontawesome-free/scss/fontawesome.scss';
 
-@import url('https://fonts.googleapis.com/css2?family=Chakra+Petch:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
 
 body {
-  font-family: 'Chakra Petch', sans-serif;
+  font-family: 'Roboto', sans-serif;
 }
 
 img {
@@ -29,28 +29,12 @@ a {
   cursor: pointer;
 }
 
-header {
-  box-shadow: 1px 6px 15px 6px $my-dark-blue;
-  width: 100%;
-  height: 56px;
-  position: fixed;
-  top: 0;
-  left: 0;
-  background-color: $color-my-quaternary;
-  z-index: 100;
-}
 
-footer {
-  height: 20vh;
-  background-color: $my-dark-blue;
 
-  .nav-link {
-    color: $color-my-terciary;
-  }
-}
+
 
 main {
-  margin-top: 57px;
+  // margin-top: 57px;
 }
 
 .my-secondary {
@@ -65,22 +49,6 @@ main {
   }
 }
 
-.navbar-nav .nav-link.active {
-  color: $color-my-contrast;
-}
-
-.hero {
-  height: 45vh;
-  background-image: url('https://as2.ftcdn.net/v2/jpg/05/87/70/63/1000_F_587706354_EkvX6LkLdcUg1G9E8AC0xAzkHhc8X5Dx.jpg');
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: 20%;
-}
-
-.hero-content {
-  background-color: $color-my-terciary;
-  opacity: 90%;
-}
 
 #projects {
   img {

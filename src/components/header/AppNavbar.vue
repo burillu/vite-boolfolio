@@ -40,5 +40,8 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-// @use '../../assets/styles/partials/variables' as *;
+@use '../../assets/partials/variables' as *;
+.navbar-nav .nav-link.active {
+  color: $color-my-contrast;
+}
 </style>
