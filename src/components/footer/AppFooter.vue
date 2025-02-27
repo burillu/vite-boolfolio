@@ -1,17 +1,17 @@
 <template>
     <div class="container">
         Footer
-        <AppNavBar :classTextColor="store.navBarFooter.classText" :src="store.navBarFooter.srcLogo"
+        <AppMenu :classTextColor="store.navBarFooter.classText" :src="store.navBarFooter.srcLogo"
             :tabsArray="store.navBarFooter.tabs" />
     </div>
 </template>
 <script>
-import AppNavBar from '../header/AppNavbar.vue';
 import { store } from '../../store';
+import AppMenu from '../AppMenu.vue';
 
 export default {
     name: 'AppFooter',
-    components: { AppNavBar },
+    components: { AppMenu },
     data() {
         return {
             store
@@ -23,11 +23,11 @@ export default {
 @use '../../assets/partials/variables' as *;
 
 footer {
-  height: 20vh;
-  background-color: $my-dark-blue;
+    height: 20vh;
+    background-color: $my-terciary-light;
 
-  .nav-link {
-    color: $color-my-terciary;
-  }
+    .nav-link {
+        color: $my-blue-badge;
+    }
 }
 </style>

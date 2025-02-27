@@ -1,22 +1,14 @@
 <template>
-    <section id="home-content">
-        <div class="container">
+    <section id="home-content" class="bg-white position-card">
+        <div class="container py-5">
 
-            <div class="row justify-content-between">
-                <div class="col-12 col-md-6 d-flex flex-column justify-content-center">
-                    <h2> Web Developer Full Stack </h2>
-                    <p> Lorem ipsum dolor, sit amet consectetur adipisicing elit. Provident veritatis laboriosam reiciendis!
-                        Vel
-                        dolorum quam quod culpa! Eaque odit fugiat repellendus omnis natus modi saepe, unde itaque? Tempora
-                        debitis dolorum ab eius? Dolor, nihil? Totam autem consectetur cumque suscipit quisquam voluptatum,
-                        placeat, dicta beatae eligendi minus sed in, animi fugit saepe! Dignissimos, et. Deleniti maxime
-                        fuga ea
-                        sint accusamus dolorem esse numquam nostrum explicabo sapiente voluptatem dolorum, harum velit sed
-                        in
-                        facilis doloribus. Id aperiam vitae doloribus architecto, atque et omnis alias quis ratione? Ipsum
-                        accusantium, quos dicta vero, molestias ad commodi fugit est delectus ut voluptate atque? Error?</p>
-                </div>
-                <div class="col-12 col-md-5">
+            <div class="row flex-md-row-reverse">
+                <div class="col-12 col-md-5 d-flex flex-column justify-content-center lh-lg">
+                        <h2>Full-Stack Web Developer  </h2>
+                        <p> In qualità di Full-Stack Developer, mi trovo spesso al crocevia tra creatività e tecnologia. <br>
+                        La mia esperienza mi ha insegnato a padroneggiare ogni fase del processo di sviluppo, dal frontend all'infrastruttura backend, garantendo una sinergia impeccabile tra design e funzionalità.</p>
+                    </div>
+                <div class="col-12 col-md-6">
                     <div class="row">
                         <div class="col-6">
                             <img src="https://png.pngtree.com/png-vector/20190811/ourmid/pngtree-vector-server-icon-png-image_1683167.jpg"
@@ -28,6 +20,7 @@
                         </div>
                     </div>
 
+                    
 
                 </div>
 
@@ -54,9 +47,9 @@ export default {
             }
             axios.get(this.srcNext).then(res => {
 
-                console.log(this.srcNext);
+                // console.log(this.srcNext);
                 this.store.projects = res.data.results;
-                console.log(store.projects);
+                // console.log(store.projects);
                 this.currPage = res.data.results.current_page;
                 this.srcNext = res.data.results.next_page_url;
 
@@ -69,7 +62,6 @@ export default {
                 this.store.projects = res.data.results;
                 this.currPage = res.data.results.current_page;
                 this.srcNext = res.data.results.next_page_url;
-
                 console.log(store.projects);
 
             });
@@ -81,4 +73,24 @@ export default {
     },
 }
 </script>
-<style></style>
+<style lang="scss">
+#home-content{
+    position: relative;
+    border-radius: 30px;
+}
+
+.svg-divider{
+    transform: rotateX(110deg);    
+    height: 200px;
+    position:absolute;
+    top:-130px;
+    right: 0;
+    left: 0;
+}
+.position-card{
+    position:relative;
+    top:-30px;
+    right: 0;
+    left: 0;
+}
+</style>

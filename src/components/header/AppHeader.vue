@@ -24,19 +24,21 @@ export default {
 </script>
 <style lang="scss">
 @use '../../assets/partials/variables' as *;
-    header {
-//   box-shadow: 1px 6px 15px 6px $my-dark-blue;
-  width: 100%;
-  height: 70px;
-  position: fixed;
-  top: 0;
-  left: 0;
-  background-color:rgba($color: $my-dark-blue, $alpha: 0.7);
-//   opacity: 50%;
+
+header {
+    //   box-shadow: 1px 6px 15px 6px $my-dark-blue;
+    width: 100%;
+    height: 80px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: rgba($color: $my-dark-blue, $alpha: 0.7);
+    //   opacity: 50%;
     backdrop-filter: blur(5px);
-  z-index: 100;
-  .nav-link {
-    color: $color-my-terciary;
-  }
+    z-index: 100;
+
+    .nav-link {
+        color: $color-my-terciary;
+    }
 }
 </style>

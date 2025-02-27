@@ -3,11 +3,11 @@
         <div class="hero-content h-100">
             <div class="container h-100">
                 <div class="row align-content-center h-100">
-                    <div class="col-5 ">
+                    <div class="col-12 col-md-8 col-lg-5 py-5">
                         <span class="text-white">Ciao ! Mi chiamo </span>
-                       <h1 class="my-secondary mb-4 fw-light"> Michele Ebau</h1>
+                       <h1 class="my-secondary mb-4 fw-bold"> Michele Ebau</h1>
                         <p class="my-secondary fw-light lh-lg">
-                            Sono un Web Developer Full-Stack e Mobile App Developer con una passione per creare soluzioni digitali innovative e funzionali. <br>
+                            Sono un Full-Stack Web Developer e Mobile App Developer con una passione per creare soluzioni digitali innovative e funzionali. <br>
                             Con anni di esperienza nel settore, mi dedico a trasformare idee in realtà attraverso la programmazione e lo sviluppo di applicazioni web e mobile.<br> 
                             Ogni progetto è per me una nuova sfida e una nuova opportunità per imparare e crescere.<br> 
                             Lavoro con precisione, cura dei dettagli e un occhio sempre attento alle ultime tendenze e tecnologie.
@@ -17,7 +17,7 @@
                 </div>
                 
             </div>
-            <svg class="svg-divider" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 100"><path d="M0 0v4s250 96 500 96 500-96 500-96V0H0Z" fill="#FFF" fill-opacity="1"></path></svg>
+            
         </div>
 
     </div>
@@ -54,13 +54,4 @@ export default {
 
 </style>
 <style lang="css">
-.svg-divider{
-    transform: rotateX(180deg);
-    position:absolute;
-    bottom: 0;
-    right: 0;
-    left: 0;
-    color: white;
-    opacity: 1;
-}
 </style>
