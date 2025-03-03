@@ -5,8 +5,6 @@
                 <div class="col-8">
                     <AppCard :project="project" />
                 </div>
-                <router-link
-                    :to="{ name: 'projects-details', params: { slug: 'proj-html-vuejs' } }">proj-html-vuejs</router-link>
 
             </div>
 

@@ -30,13 +30,6 @@ a {
 }
 
 
-
-
-
-main {
-  // margin-top: 57px;
-}
-
 .my-secondary {
   color: $color-my-secondary;
 }
@@ -96,4 +89,17 @@ main {
 
 .my-badge-laravel {
   background-color: $red;
+}
+
+
+.fade-enter-active,
+.fade-leave-active {
+  transition: opacity 0.5s ease;
+  /* Durata e tipo di transizione */
+}
+
+.fade-enter-from,
+.fade-leave-to {
+  opacity: 0;
+  /* Inizio o fine con opacità a 0 */
 }

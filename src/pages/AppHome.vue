@@ -1,5 +1,5 @@
 <template>
-    <AppHero :pageTitle="'Home'" />
+
     <AppMain />
 </template>
 <script>

@@ -48,4 +48,10 @@ export default {
     }
 }
 </script>
-<style></style>
+<style lang="scss">
+pre {
+    white-space: pre-wrap;
+    word-wrap: break-word;
+    font-family: inherit;
+}
+</style>
