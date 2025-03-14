@@ -103,24 +103,3 @@ a {
   opacity: 0;
   /* Inizio o fine con opacità a 0 */
 }
-
-.slide-enter-active,
-.slide-leave-active {
-  transition: transform .8s ease-in-out;
-}
-
-.slide-enter-from {
-  transform: translateX(0);
-}
-
-.slide-enter-to {
-  transform: translateX(-100%);
-}
-
-.slide-leave-from {
-  transform: translateX(0);
-}
-
-.slide-leave-to {
-  transform: translateX(-100%);
-}

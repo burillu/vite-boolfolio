@@ -20,18 +20,18 @@
         </h2>
         <div class="container">
 
-            <TransitionGroup tag="div" name="slide" class="slider-container row flex-nowrap overflow-hidden">
-                <div class="row mb-4 " :key="store.projects.current_page">
-                    <div class="col-3" v-for="project in store.projects.data">
 
-                        <AppCard :project="project" :shortText="true" />
+            <AppSlider :transitionName="transitionName" :transitionKey="currPage">
+                <div class="col-3" v-for="project in store.projects.data">
 
-
+                    <AppCard :key="project.id" :project="project" :shortText="true" />
 
 
-                    </div>
+
+
                 </div>
-            </TransitionGroup>
+            </AppSlider>
+
         </div>
         <div class="d-flex justify-content-between">
             <div class="col-auto">
@@ -54,22 +54,26 @@ import AppCard from '@/components/AppCard.vue';
 import { store } from '../store';
 import axios from 'axios';
 import AppHero from '@/components/main/AppHero.vue';
+import AppSlider from '@/components/AppSlider.vue';
 export default {
     name: 'AppProjects',
+    components: { AppCard, AppHero, AppSlider },
     data() {
         return {
             store,
-            currPage: null,
+            currPage: 0,
             srcNext: null,
             srcPrev: null,
             typesList: null,
             selectedType: null,
-            selectTypeValue: 'All'
+            selectTypeValue: 'All',
+            transitionName: 'slide',
 
         };
     },
     methods: {
         nextPage() {
+            this.transitionName = 'slide';
             if (this.currPage == store.projects.last_page) {
                 this.srcNext = store.projects.first_page_url;
             }
@@ -84,6 +88,7 @@ export default {
 
         },
         prevPage() {
+            this.transitionName = 'slideback';
             if (this.currPage == 1) {
                 this.srcPrev = store.projects.last_page_url;
             }
@@ -198,9 +203,9 @@ export default {
     mounted() {
         this.getAllProjects();
         this.getTypesList();
-        //console.log(store.projects);
+        // console.log(store.projects.current_page);
     },
-    components: { AppCard, AppHero }
+
 }
 </script>
 <style lang="scss" scoped>
