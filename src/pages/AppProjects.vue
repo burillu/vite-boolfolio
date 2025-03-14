@@ -18,26 +18,32 @@
         <h2 class="text-center">
             {{ selectTypeValue }} Projects
         </h2>
-        <div class="row mb-4">
-            <div class="col-3" v-for="project in store.projects.data">
+        <div class="container">
+
+            <TransitionGroup tag="div" name="slide" class="slider-container row flex-nowrap overflow-hidden">
+                <div class="row mb-4 " :key="store.projects.current_page">
+                    <div class="col-3" v-for="project in store.projects.data">
+
+                        <AppCard :project="project" :shortText="true" />
 
 
-                <AppCard :project="project" :shortText="true" />
 
 
-
-            </div>
+                    </div>
+                </div>
+            </TransitionGroup>
         </div>
         <div class="d-flex justify-content-between">
             <div class="col-auto">
-                <button class="btn btn-primary" @click="prevPage">Prev</button>
+                <button class="btn btn-secondary" @click="prevPage"><i class="fa-solid fa-angle-left"></i></button>
 
             </div>
             <div class="col-auto text-center d-flex justify-content-center">
-                <button class="page-link " @click="goToPage(n)" v-for="n in store.projects.last_page">{{ n }}</button>
+                <button class="page-link" :class="currPage == n ? 'current-page' : ''" @click="goToPage(n)"
+                    v-for="n in store.projects.last_page">{{ n }}</button>
             </div>
             <div class="col-auto">
-                <button class="btn btn-success" @click="nextPage">Next</button>
+                <button class="btn btn-secondary" @click="nextPage"><i class="fa-solid fa-angle-right"></i></button>
             </div>
         </div>
 
@@ -197,4 +203,11 @@ export default {
     components: { AppCard, AppHero }
 }
 </script>
-<style></style>
+<style lang="scss" scoped>
+@use '/src/assets/partials/variables' as *;
+
+.current-page {
+    font-size: xx-large;
+    color: $color-my-contrast;
+}
+</style>

@@ -47,6 +47,8 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+@use '/src/assets/partials/variables.scss' as *;
+
 #main-content {
   position: relative;
   border-radius: 30px;
@@ -57,5 +59,14 @@ export default {
   top: -30px;
   right: 0;
   left: 0;
+}
+
+footer {
+  // height: 500px;
+  background-color: $my-terciary-light;
+
+  .nav-link {
+    color: $my-blue-badge;
+  }
 }
 </style>

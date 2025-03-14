@@ -46,7 +46,7 @@ export const store = reactive({
     },
     navBarFooter: {
         classText: 'my-text-primary',
-        srcLogo: 'https://media.licdn.com/dms/image/v2/D4E03AQEYk5x2BQqOmg/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1708207818662?e=1746057600&v=beta&t=o0Wol0WbET5NTx3mq3tJIbwDbciwBqagROL2IOuHuqQ',
+        srcLogo: '/src/assets/logo-me.png',
         tabs: [
 
             {

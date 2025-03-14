@@ -8,12 +8,7 @@
                             <img :src="src" alt="logo">
                         </div>
                     </a>
-                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                        data-bs-target="#navbarScroll" aria-controls="navbarScroll" aria-expanded="false"
-                        aria-label="Toggle navigation">
-                        <span class="navbar-toggler-icon"></span>
-                    </button>
-                    <div class="collapse navbar-collapse" id="navbarScroll">
+                    <div class="" id="navbarScroll">
 
                         <AppMenu :classTextColor="store.navBarHeader.classText" :src="store.navBarHeader.srcLogo"
                             :tabsArray="store.navBarHeader.tabs" />
@@ -55,7 +50,7 @@ export default {
 
 
 .navbar-collapse.show {
-    background-color: rgba($color:$my-dark-blue, $alpha: 0.9);
+    background-color: rgba($color: $my-dark-blue, $alpha: 0.9);
     backdrop-filter: blur(5px);
 }
 </style>
